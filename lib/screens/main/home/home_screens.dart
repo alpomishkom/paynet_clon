@@ -42,7 +42,12 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Row(
                         children: [
-                          Text('Paynet karta'),
+                          Text(
+                            'Paynet karta',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
                           Spacer(),
                           Text(
                             'Bu nima?',
