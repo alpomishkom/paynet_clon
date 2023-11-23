@@ -10,8 +10,8 @@ class Kartalar extends StatelessWidget {
       width: double.infinity,
       height: 200,
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 251, 251, 251),
-        borderRadius: BorderRadius.circular(14),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(17),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.shade300,
@@ -30,6 +30,7 @@ class Kartalar extends StatelessWidget {
                 Text(
                   'Paynet karta',
                   style: TextStyle(
+                    fontSize: 17,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
