@@ -8,7 +8,7 @@ class AppBarC extends StatelessWidget {
     return Row(
       children: [
         const CircleAvatar(
-          radius: 16,
+          radius: 17,
           backgroundColor: Colors.green,
         ),
         const SizedBox(width: 10),
