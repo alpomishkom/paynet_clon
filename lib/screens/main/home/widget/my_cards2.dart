@@ -5,7 +5,7 @@ class MyCards2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   Container(
+    return Container(
       padding: const EdgeInsets.only(top: 15, bottom: 15),
       height: MediaQuery.of(context).size.height / 3.3,
       child: Row(
@@ -51,7 +51,7 @@ class MyCards2 extends StatelessWidget {
                       )
                     ],
                   ),
-                  const SizedBox(height: 10),
+                  const Spacer(),
                   Stack(
                     children: [
                       SizedBox(
@@ -59,8 +59,67 @@ class MyCards2 extends StatelessWidget {
                         width: double.infinity,
                         child: DecoratedBox(
                           decoration: BoxDecoration(
-                            color: Colors.red,
+                            gradient: LinearGradient(
+                              transform: const GradientRotation(1),
+                              colors: [
+                                Colors.orange.shade900,
+                                Colors.orangeAccent,
+                              ],
+                            ),
                             borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    const CircleAvatar(
+                                      radius: 17,
+                                      backgroundImage:
+                                          AssetImage('assets/tbc.jpeg'),
+                                    ),
+                                    const Spacer(),
+                                    Image.asset(
+                                      'assets/humo.png',
+                                      scale: 4,
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 7),
+                                 Row(
+                                  children: [
+                                    const Text(
+                                      '334 000 ',
+                                      style: TextStyle(
+                                        fontSize: 17,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      'so\'m',
+                                      style: TextStyle(
+                                        fontSize: 17,
+                                        color: Colors.grey.shade300,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const Spacer(),
+                                const Text(
+                                  'HUMO',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -170,8 +229,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 47,
                                     height: 20,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(5),
+                                      borderRadius: BorderRadius.circular(5),
                                       color: Colors.green,
                                     ),
                                     child: const Row(
@@ -181,8 +239,7 @@ class MyCards2 extends StatelessWidget {
                                           style: TextStyle(
                                               fontSize: 12,
                                               color: Colors.white,
-                                              fontWeight:
-                                              FontWeight.bold),
+                                              fontWeight: FontWeight.bold),
                                         ),
                                         Text(
                                           'so\'m',
@@ -203,8 +260,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 10,
                                     height: 4,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(2),
+                                      borderRadius: BorderRadius.circular(2),
                                       color: Colors.grey,
                                     ),
                                   ),
@@ -213,8 +269,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 10,
                                     height: 4,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(2),
+                                      borderRadius: BorderRadius.circular(2),
                                       color: Colors.grey,
                                     ),
                                   ),
@@ -223,8 +278,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 10,
                                     height: 4,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(2),
+                                      borderRadius: BorderRadius.circular(2),
                                       color: Colors.green,
                                     ),
                                   ),
@@ -233,8 +287,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 10,
                                     height: 4,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(2),
+                                      borderRadius: BorderRadius.circular(2),
                                       color: Colors.grey,
                                     ),
                                   ),
@@ -243,8 +296,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 10,
                                     height: 4,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(2),
+                                      borderRadius: BorderRadius.circular(2),
                                       color: Colors.grey,
                                     ),
                                   ),
@@ -253,8 +305,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 10,
                                     height: 4,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(2),
+                                      borderRadius: BorderRadius.circular(2),
                                       color: Colors.grey,
                                     ),
                                   ),
@@ -263,8 +314,7 @@ class MyCards2 extends StatelessWidget {
                                     width: 10,
                                     height: 4,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                      BorderRadius.circular(2),
+                                      borderRadius: BorderRadius.circular(2),
                                       color: Colors.green,
                                     ),
                                   ),
